@@ -19,14 +19,12 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "antlr": "antlr4ts -visitor path/to/MyGrammar.g4",
-    "bfp": "ts-node ./parser/index.ts --path ./src/app.module.ts"
+    "parser": "ts-node ./parser/index.ts --path ./src/app.module.ts"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
-    "antlr4ts": "^0.5.0-alpha.4",
     "minimist": "^1.2.5",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

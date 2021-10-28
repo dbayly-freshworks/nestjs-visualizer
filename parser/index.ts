@@ -1,9 +1,14 @@
-import gazeIntoTheAbyss from './nestJsTreeVisualizer';
+import getModuleTree from './nestJsTreeVisualizer';
 import * as minimist from 'minimist';
-import { ParserArgs } from './constants';
+import { ModuleInfo, ParserArgs } from './constants';
+import * as fs from 'fs';
+import { extractPrefix } from './helpers';
+
 function main(){
-    let args:ParserArgs = minimist(process.argv.slice(2))
-    console.log(args.path);
-    gazeIntoTheAbyss(args.path);
+    const args:ParserArgs = minimist(process.argv.slice(2))
+    const prefix = extractPrefix(args.path);
+    const moduleTree:ModuleInfo = getModuleTree(args.path,prefix);
+    fs.writeFileSync('out.json',JSON.stringify(moduleTree));
 }
+
 main();
