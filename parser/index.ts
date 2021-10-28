@@ -1,4 +1,4 @@
-import gazeIntoTheAbyss from './bruteforce';
+import gazeIntoTheAbyss from './nestJsTreeVisualizer';
 import * as minimist from 'minimist';
 import { ParserArgs } from './constants';
 function main(){

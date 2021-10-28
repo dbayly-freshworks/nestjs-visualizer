@@ -1,0 +1,38 @@
+
+{
+    "moduleName":"AppModule",
+    "imports":[
+        {
+            "name":"AModule",
+            "path":"./amodule/amodule.module.ts",
+            "Module":{
+                "moduleName":"AModule",
+                "exports":[],
+                "controllers":[],
+                "providers":[]
+            }
+        },{
+            "name":"BModule",
+            "path":"./bmodule/bmodule.module.ts",
+            "Module":{
+                "moduleName":"bModule",
+                "exports":[],
+                "controllers":[],
+                "providers":[]
+            }
+        },{
+            "name":"AModule",
+            "path":"./cmodule/cmodule.module.ts",
+            "Module":{
+                "moduleName":"cModule",
+                "exports":[],
+                "controllers":[],
+                "providers":[]
+            }
+        }
+
+    ],
+    "exports":[],
+    "controllers":[],
+    "providers":[]
+}
