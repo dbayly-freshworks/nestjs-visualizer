@@ -1,4 +1,4 @@
-export const cmha_full = {
+export const ABCD_full = {
    "moduleName":"AppModule",
    "imports":[
       {
@@ -55,10 +55,10 @@ export const cmha_full = {
                   }
                },
                {
-                  "name":"CMHAUserModule",
-                  "path":"src/cmha/user/cmha-user-module",
+                  "name":"ABCDUserModule",
+                  "path":"src/ABCD/user/ABCD-user-module",
                   "module":{
-                     "moduleName":"CMHAUserModule",
+                     "moduleName":"ABCDUserModule",
                      "imports":[
                         {
                            "name":"FileModule",
@@ -91,23 +91,23 @@ export const cmha_full = {
                      ],
                      "exports":[
                         {
-                           "name":"CMHAUserService",
-                           "path":"./cmha-user.service"
+                           "name":"ABCDUserService",
+                           "path":"./ABCD-user.service"
                         }
                      ],
                      "providers":[
                         {
-                           "name":"CMHAUserService",
-                           "path":"./cmha-user.service"
+                           "name":"ABCDUserService",
+                           "path":"./ABCD-user.service"
                         }
                      ]
                   }
                },
                {
-                  "name":"MNBCUserModule",
-                  "path":"src/mnbc/user/mnbc-user.module",
+                  "name":"EFGHUserModule",
+                  "path":"src/EFGH/user/EFGH-user.module",
                   "module":{
-                     "moduleName":"MNBCUserModule",
+                     "moduleName":"EFGHUserModule",
                      "imports":[
                         {
                            "name":"FileModule",
@@ -140,14 +140,14 @@ export const cmha_full = {
                      ],
                      "exports":[
                         {
-                           "name":"MNBCUserService",
-                           "path":"./mnbc-user.service"
+                           "name":"EFGHUserService",
+                           "path":"./EFGH-user.service"
                         }
                      ],
                      "providers":[
                         {
-                           "name":"MNBCUserService",
-                           "path":"./mnbc-user.service"
+                           "name":"EFGHUserService",
+                           "path":"./EFGH-user.service"
                         }
                      ]
                   }
