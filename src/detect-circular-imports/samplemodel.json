@@ -1,0 +1,359 @@
+{
+  "moduleName": "AppModule",
+  "imports": [
+    {
+      "name": "DatabaseModule",
+      "path": "./database/database.module",
+      "module": {
+        "moduleName": "DatabaseModule",
+        "imports": [],
+        "controllers": [],
+        "exports": [],
+        "providers": [
+          {
+            "name": "DatabaseService",
+            "path": "./database.service"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AuthModule",
+      "path": "./core/auth/auth.module",
+      "module": {
+        "moduleName": "AuthModule",
+        "imports": [
+          {
+            "name": "UserModule",
+            "path": "src/core/user/user.module",
+            "module": {
+              "moduleName": "UserModule",
+              "imports": [],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "UserService",
+                  "path": "./user.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "UserService",
+                  "path": "./user.service"
+                }
+              ]
+            }
+          },
+          {
+            "name": "CMHAUserModule",
+            "path": "src/cmha/user/cmha-user-module",
+            "module": {
+              "moduleName": "CMHAUserModule",
+              "imports": [
+                {
+                  "name": "FileModule",
+                  "path": "src/core/file/file.module",
+                  "module": {
+                    "moduleName": "FileModule",
+                    "imports": [],
+                    "controllers": [],
+                    "exports": [
+                      {
+                        "name": "FileService",
+                        "path": "./file.service"
+                      }
+                    ],
+                    "providers": [
+                      {
+                        "name": "FileService",
+                        "path": "./file.service"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "CMHAUserService",
+                  "path": "./cmha-user.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "CMHAUserService",
+                  "path": "./cmha-user.service"
+                }
+              ]
+            }
+          },
+          {
+            "name": "MNBCUserModule",
+            "path": "src/mnbc/user/mnbc-user.module",
+            "module": {
+              "moduleName": "MNBCUserModule",
+              "imports": [
+                {
+                  "name": "FileModule",
+                  "path": "src/core/file/file.module",
+                  "module": {
+                    "moduleName": "FileModule",
+                    "imports": [],
+                    "controllers": [],
+                    "exports": [
+                      {
+                        "name": "FileService",
+                        "path": "./file.service"
+                      }
+                    ],
+                    "providers": [
+                      {
+                        "name": "FileService",
+                        "path": "./file.service"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "MNBCUserService",
+                  "path": "./mnbc-user.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "MNBCUserService",
+                  "path": "./mnbc-user.service"
+                }
+              ]
+            }
+          },
+          {
+            "name": "EmailModule",
+            "path": "src/core/email/email.module",
+            "module": {
+              "moduleName": "EmailModule",
+              "imports": [],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "EmailService",
+                  "path": "./email.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "EmailService",
+                  "path": "./email.service"
+                }
+              ]
+            }
+          },
+          {
+            "name": "NotificationModule",
+            "path": "src/core/notification/notification.module",
+            "module": {
+              "moduleName": "NotificationModule",
+              "imports": [],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ]
+            }
+          }
+        ],
+        "controllers": [
+          {
+            "name": "AuthController",
+            "path": "./auth.controller"
+          },
+          {
+            "name": "AuthResetController",
+            "path": "./auth-reset.controller"
+          }
+        ],
+        "exports": [],
+        "providers": [
+          {
+            "name": "AuthService",
+            "path": "./auth.service"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ContactsModule",
+      "path": "./core/contacts/contacts.module",
+      "module": {
+        "moduleName": "ContactsModule",
+        "imports": [
+          {
+            "name": "NotificationModule",
+            "path": "src/core/notification/notification.module",
+            "module": {
+              "moduleName": "NotificationModule",
+              "imports": [],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ]
+            }
+          }
+        ],
+        "controllers": [],
+        "exports": [
+          {
+            "name": "ContactService",
+            "path": "./contacts.service"
+          }
+        ],
+        "providers": [
+          {
+            "name": "ContactService",
+            "path": "./contacts.service"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoomModule",
+      "path": "./core/call/room.module",
+      "module": {
+        "moduleName": "RoomModule",
+        "imports": [
+          {
+            "name": "NotificationModule",
+            "path": "src/core/notification/notification.module",
+            "module": {
+              "moduleName": "NotificationModule",
+              "imports": [],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "NotificationService",
+                  "path": "./notification.service"
+                }
+              ]
+            }
+          },
+          {
+            "name": "ContactsModule",
+            "path": "src/core/contacts/contacts.module",
+            "module": {
+              "moduleName": "ContactsModule",
+              "imports": [
+                {
+                  "name": "NotificationModule",
+                  "path": "src/core/notification/notification.module",
+                  "module": {
+                    "moduleName": "NotificationModule",
+                    "imports": [],
+                    "controllers": [],
+                    "exports": [
+                      {
+                        "name": "NotificationService",
+                        "path": "./notification.service"
+                      }
+                    ],
+                    "providers": [
+                      {
+                        "name": "NotificationService",
+                        "path": "./notification.service"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "controllers": [],
+              "exports": [
+                {
+                  "name": "ContactService",
+                  "path": "./contacts.service"
+                }
+              ],
+              "providers": [
+                {
+                  "name": "ContactService",
+                  "path": "./contacts.service"
+                }
+              ]
+            }
+          }
+        ],
+        "controllers": [],
+        "exports": [
+          {
+            "name": "RoomService",
+            "path": "./room.service"
+          }
+        ],
+        "providers": [
+          {
+            "name": "RoomService",
+            "path": "./room.service"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmailModule",
+      "path": "./core/email/email.module",
+      "module": {
+        "moduleName": "EmailModule",
+        "imports": [],
+        "controllers": [],
+        "exports": [
+          {
+            "name": "EmailService",
+            "path": "./email.service"
+          }
+        ],
+        "providers": [
+          {
+            "name": "EmailService",
+            "path": "./email.service"
+          }
+        ]
+      }
+    }
+  ],
+  "controllers": [
+    {
+      "name": "AppController",
+      "path": "./app.controller"
+    }
+  ],
+  "exports": [],
+  "providers": [
+    {
+      "name": "AppService",
+      "path": "./app.service"
+    }
+  ]
+}
