@@ -23,6 +23,7 @@ export default function detectCircularImports() {
   }
 
   console.log('this is res,', map);
+  return map;
 }
 function retrieveImportsFromChildren(
   input: any,
@@ -36,7 +37,6 @@ function retrieveImportsFromChildren(
     for (let i = 0; i < v.length; i++) {
       if (v[i] === input.module.moduleName) duplicate = true;
     }
-    console.log('get map key and  value', mapKey, v);
     if (!duplicate) v.push(input.module.moduleName);
   } else map.set(mapKey, [input.module.moduleName]);
 
@@ -51,4 +51,22 @@ function retrieveImportsFromChildren(
   } else if (input.module.imports.length === 0) {
     map.set(input.name, []);
   }
+}
+
+export function checkCircularDependency(map: Map<string, string[]>) {
+  const circularDependencyMap = new Map<string, string>();
+  // check to see if this module already exist, if exist then check it's dependency
+  map.forEach((value: string[], key: string) => {
+    console.log(key, value);
+    for (let i = 0; i < value.length; i++) {
+      const anotherModuleDependency = map.get(value[i]);
+      for (let j = 0; j < anotherModuleDependency.length; j++) {
+        if (anotherModuleDependency[j] === key) {
+          circularDependencyMap.set(key, anotherModuleDependency[j]);
+          break;
+        }
+      }
+    }
+  });
+  return circularDependencyMap;
 }
