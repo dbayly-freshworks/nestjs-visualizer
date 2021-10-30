@@ -17,6 +17,39 @@ export interface ModuleDependency{
     module?:ModuleInfo
 }
 
+export interface GraphNode {
+    id:number
+    label:string
+}
+
+export interface Edge {
+    from:number,
+    to:number
+    arrows?:{
+        enabled:boolean 
+        type:string
+    }
+}
+
+export interface Graph {
+    nodes:GraphNode[],
+    edges:Edge[]
+}
+
+export enum ArrowType{
+    Arrow="arrow",
+    Bar="bar",
+    Circle="circle",
+    Box="box",
+    Crow="crow",
+    Curve="curve",
+    InvCurve="inv_curve",
+    Diamond="diamond",
+    Triangle="triangle",
+    InvTriangle="inv_triangle",
+    Vee="vee"
+}
+
 export const colors ={
     Reset : "\x1b[0m%s\x1b[0m",
     Bright : "\x1b[1m%s\x1b[0m",
