@@ -7,7 +7,172 @@
           "module":{
              "moduleName":"AmoduleModule",
              "imports":[
-                
+                {
+                   "name":"BmoduleModule",
+                   "path":"src/bmodule/bmodule.module",
+                   "module":{
+                      "moduleName":"BmoduleModule",
+                      "imports":[
+                         {
+                            "name":"CmoduleModule",
+                            "path":"src/cmodule/cmodule.module",
+                            "module":{
+                               "moduleName":"CmoduleModule",
+                               "imports":[
+                                  {
+                                     "name":"AmoduleModule",
+                                     "path":"src/amodule/amodule.module",
+                                     "module":{
+                                        "moduleName":"AmoduleModule",
+                                        "imports":[
+                                           {
+                                              "name":"BmoduleModule",
+                                              "path":"src/bmodule/bmodule.module",
+                                              "module":{
+                                                 "moduleName":"BmoduleModule",
+                                                 "imports":[
+                                                    {
+                                                       "name":"CmoduleModule",
+                                                       "path":"src/cmodule/cmodule.module",
+                                                       "module":{
+                                                          "moduleName":"CmoduleModule",
+                                                          "imports":[
+                                                             {
+                                                                "name":"AmoduleModule",
+                                                                "path":"src/amodule/amodule.module",
+                                                                "module":{
+                                                                   "moduleName":"AmoduleModule",
+                                                                   "imports":[
+                                                                      {
+                                                                         "name":"BmoduleModule",
+                                                                         "path":"src/bmodule/bmodule.module",
+                                                                         "module":{
+                                                                            "moduleName":"BmoduleModule",
+                                                                            "imports":[
+                                                                               {
+                                                                                  "name":"CmoduleModule",
+                                                                                  "path":"src/cmodule/cmodule.module",
+                                                                                  "module":{
+                                                                                     "moduleName":"CmoduleModule",
+                                                                                     "imports":[
+                                                                                        {
+                                                                                           "name":"AmoduleModule",
+                                                                                           "path":"src/amodule/amodule.module",
+                                                                                           "module":{
+                                                                                              "moduleName":"AmoduleModule",
+                                                                                              "imports":[
+                                                                                                 {
+                                                                                                    "name":"BmoduleModule",
+                                                                                                    "path":"src/bmodule/bmodule.module"
+                                                                                                 }
+                                                                                              ],
+                                                                                              "controllers":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "exports":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "providers":[
+                                                                                                 
+                                                                                              ]
+                                                                                           }
+                                                                                        }
+                                                                                     ],
+                                                                                     "controllers":[
+                                                                                        
+                                                                                     ],
+                                                                                     "exports":[
+                                                                                        
+                                                                                     ],
+                                                                                     "providers":[
+                                                                                        
+                                                                                     ]
+                                                                                  }
+                                                                               }
+                                                                            ],
+                                                                            "controllers":[
+                                                                               
+                                                                            ],
+                                                                            "exports":[
+                                                                               
+                                                                            ],
+                                                                            "providers":[
+                                                                               
+                                                                            ]
+                                                                         }
+                                                                      }
+                                                                   ],
+                                                                   "controllers":[
+                                                                      
+                                                                   ],
+                                                                   "exports":[
+                                                                      
+                                                                   ],
+                                                                   "providers":[
+                                                                      
+                                                                   ]
+                                                                }
+                                                             }
+                                                          ],
+                                                          "controllers":[
+                                                             
+                                                          ],
+                                                          "exports":[
+                                                             
+                                                          ],
+                                                          "providers":[
+                                                             
+                                                          ]
+                                                       }
+                                                    }
+                                                 ],
+                                                 "controllers":[
+                                                    
+                                                 ],
+                                                 "exports":[
+                                                    
+                                                 ],
+                                                 "providers":[
+                                                    
+                                                 ]
+                                              }
+                                           }
+                                        ],
+                                        "controllers":[
+                                           
+                                        ],
+                                        "exports":[
+                                           
+                                        ],
+                                        "providers":[
+                                           
+                                        ]
+                                     }
+                                  }
+                               ],
+                               "controllers":[
+                                  
+                               ],
+                               "exports":[
+                                  
+                               ],
+                               "providers":[
+                                  
+                               ]
+                            }
+                         }
+                      ],
+                      "controllers":[
+                         
+                      ],
+                      "exports":[
+                         
+                      ],
+                      "providers":[
+                         
+                      ]
+                   }
+                }
              ],
              "controllers":[
                 
@@ -26,7 +191,172 @@
           "module":{
              "moduleName":"BmoduleModule",
              "imports":[
-                
+                {
+                   "name":"CmoduleModule",
+                   "path":"src/cmodule/cmodule.module",
+                   "module":{
+                      "moduleName":"CmoduleModule",
+                      "imports":[
+                         {
+                            "name":"AmoduleModule",
+                            "path":"src/amodule/amodule.module",
+                            "module":{
+                               "moduleName":"AmoduleModule",
+                               "imports":[
+                                  {
+                                     "name":"BmoduleModule",
+                                     "path":"src/bmodule/bmodule.module",
+                                     "module":{
+                                        "moduleName":"BmoduleModule",
+                                        "imports":[
+                                           {
+                                              "name":"CmoduleModule",
+                                              "path":"src/cmodule/cmodule.module",
+                                              "module":{
+                                                 "moduleName":"CmoduleModule",
+                                                 "imports":[
+                                                    {
+                                                       "name":"AmoduleModule",
+                                                       "path":"src/amodule/amodule.module",
+                                                       "module":{
+                                                          "moduleName":"AmoduleModule",
+                                                          "imports":[
+                                                             {
+                                                                "name":"BmoduleModule",
+                                                                "path":"src/bmodule/bmodule.module",
+                                                                "module":{
+                                                                   "moduleName":"BmoduleModule",
+                                                                   "imports":[
+                                                                      {
+                                                                         "name":"CmoduleModule",
+                                                                         "path":"src/cmodule/cmodule.module",
+                                                                         "module":{
+                                                                            "moduleName":"CmoduleModule",
+                                                                            "imports":[
+                                                                               {
+                                                                                  "name":"AmoduleModule",
+                                                                                  "path":"src/amodule/amodule.module",
+                                                                                  "module":{
+                                                                                     "moduleName":"AmoduleModule",
+                                                                                     "imports":[
+                                                                                        {
+                                                                                           "name":"BmoduleModule",
+                                                                                           "path":"src/bmodule/bmodule.module",
+                                                                                           "module":{
+                                                                                              "moduleName":"BmoduleModule",
+                                                                                              "imports":[
+                                                                                                 {
+                                                                                                    "name":"CmoduleModule",
+                                                                                                    "path":"src/cmodule/cmodule.module"
+                                                                                                 }
+                                                                                              ],
+                                                                                              "controllers":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "exports":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "providers":[
+                                                                                                 
+                                                                                              ]
+                                                                                           }
+                                                                                        }
+                                                                                     ],
+                                                                                     "controllers":[
+                                                                                        
+                                                                                     ],
+                                                                                     "exports":[
+                                                                                        
+                                                                                     ],
+                                                                                     "providers":[
+                                                                                        
+                                                                                     ]
+                                                                                  }
+                                                                               }
+                                                                            ],
+                                                                            "controllers":[
+                                                                               
+                                                                            ],
+                                                                            "exports":[
+                                                                               
+                                                                            ],
+                                                                            "providers":[
+                                                                               
+                                                                            ]
+                                                                         }
+                                                                      }
+                                                                   ],
+                                                                   "controllers":[
+                                                                      
+                                                                   ],
+                                                                   "exports":[
+                                                                      
+                                                                   ],
+                                                                   "providers":[
+                                                                      
+                                                                   ]
+                                                                }
+                                                             }
+                                                          ],
+                                                          "controllers":[
+                                                             
+                                                          ],
+                                                          "exports":[
+                                                             
+                                                          ],
+                                                          "providers":[
+                                                             
+                                                          ]
+                                                       }
+                                                    }
+                                                 ],
+                                                 "controllers":[
+                                                    
+                                                 ],
+                                                 "exports":[
+                                                    
+                                                 ],
+                                                 "providers":[
+                                                    
+                                                 ]
+                                              }
+                                           }
+                                        ],
+                                        "controllers":[
+                                           
+                                        ],
+                                        "exports":[
+                                           
+                                        ],
+                                        "providers":[
+                                           
+                                        ]
+                                     }
+                                  }
+                               ],
+                               "controllers":[
+                                  
+                               ],
+                               "exports":[
+                                  
+                               ],
+                               "providers":[
+                                  
+                               ]
+                            }
+                         }
+                      ],
+                      "controllers":[
+                         
+                      ],
+                      "exports":[
+                         
+                      ],
+                      "providers":[
+                         
+                      ]
+                   }
+                }
              ],
              "controllers":[
                 
@@ -45,7 +375,172 @@
           "module":{
              "moduleName":"CmoduleModule",
              "imports":[
-                
+                {
+                   "name":"AmoduleModule",
+                   "path":"src/amodule/amodule.module",
+                   "module":{
+                      "moduleName":"AmoduleModule",
+                      "imports":[
+                         {
+                            "name":"BmoduleModule",
+                            "path":"src/bmodule/bmodule.module",
+                            "module":{
+                               "moduleName":"BmoduleModule",
+                               "imports":[
+                                  {
+                                     "name":"CmoduleModule",
+                                     "path":"src/cmodule/cmodule.module",
+                                     "module":{
+                                        "moduleName":"CmoduleModule",
+                                        "imports":[
+                                           {
+                                              "name":"AmoduleModule",
+                                              "path":"src/amodule/amodule.module",
+                                              "module":{
+                                                 "moduleName":"AmoduleModule",
+                                                 "imports":[
+                                                    {
+                                                       "name":"BmoduleModule",
+                                                       "path":"src/bmodule/bmodule.module",
+                                                       "module":{
+                                                          "moduleName":"BmoduleModule",
+                                                          "imports":[
+                                                             {
+                                                                "name":"CmoduleModule",
+                                                                "path":"src/cmodule/cmodule.module",
+                                                                "module":{
+                                                                   "moduleName":"CmoduleModule",
+                                                                   "imports":[
+                                                                      {
+                                                                         "name":"AmoduleModule",
+                                                                         "path":"src/amodule/amodule.module",
+                                                                         "module":{
+                                                                            "moduleName":"AmoduleModule",
+                                                                            "imports":[
+                                                                               {
+                                                                                  "name":"BmoduleModule",
+                                                                                  "path":"src/bmodule/bmodule.module",
+                                                                                  "module":{
+                                                                                     "moduleName":"BmoduleModule",
+                                                                                     "imports":[
+                                                                                        {
+                                                                                           "name":"CmoduleModule",
+                                                                                           "path":"src/cmodule/cmodule.module",
+                                                                                           "module":{
+                                                                                              "moduleName":"CmoduleModule",
+                                                                                              "imports":[
+                                                                                                 {
+                                                                                                    "name":"AmoduleModule",
+                                                                                                    "path":"src/amodule/amodule.module"
+                                                                                                 }
+                                                                                              ],
+                                                                                              "controllers":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "exports":[
+                                                                                                 
+                                                                                              ],
+                                                                                              "providers":[
+                                                                                                 
+                                                                                              ]
+                                                                                           }
+                                                                                        }
+                                                                                     ],
+                                                                                     "controllers":[
+                                                                                        
+                                                                                     ],
+                                                                                     "exports":[
+                                                                                        
+                                                                                     ],
+                                                                                     "providers":[
+                                                                                        
+                                                                                     ]
+                                                                                  }
+                                                                               }
+                                                                            ],
+                                                                            "controllers":[
+                                                                               
+                                                                            ],
+                                                                            "exports":[
+                                                                               
+                                                                            ],
+                                                                            "providers":[
+                                                                               
+                                                                            ]
+                                                                         }
+                                                                      }
+                                                                   ],
+                                                                   "controllers":[
+                                                                      
+                                                                   ],
+                                                                   "exports":[
+                                                                      
+                                                                   ],
+                                                                   "providers":[
+                                                                      
+                                                                   ]
+                                                                }
+                                                             }
+                                                          ],
+                                                          "controllers":[
+                                                             
+                                                          ],
+                                                          "exports":[
+                                                             
+                                                          ],
+                                                          "providers":[
+                                                             
+                                                          ]
+                                                       }
+                                                    }
+                                                 ],
+                                                 "controllers":[
+                                                    
+                                                 ],
+                                                 "exports":[
+                                                    
+                                                 ],
+                                                 "providers":[
+                                                    
+                                                 ]
+                                              }
+                                           }
+                                        ],
+                                        "controllers":[
+                                           
+                                        ],
+                                        "exports":[
+                                           
+                                        ],
+                                        "providers":[
+                                           
+                                        ]
+                                     }
+                                  }
+                               ],
+                               "controllers":[
+                                  
+                               ],
+                               "exports":[
+                                  
+                               ],
+                               "providers":[
+                                  
+                               ]
+                            }
+                         }
+                      ],
+                      "controllers":[
+                         
+                      ],
+                      "exports":[
+                         
+                      ],
+                      "providers":[
+                         
+                      ]
+                   }
+                }
              ],
              "controllers":[
                 
@@ -71,7 +566,7 @@
     "providers":[
        {
           "name":"AppService",
-          "path":"./app.service"
+          "path":"src/app.service"
        }
     ]
  }
