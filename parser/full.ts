@@ -1,13 +1,29 @@
-export const ABCD_full = {
+export const ABCD_full ={
    "moduleName":"AppModule",
    "imports":[
       {
-         "name":"DatabaseModule",
-         "path":"./database/database.module",
+         "name":"AmoduleModule",
+         "path":"./amodule/amodule.module",
          "module":{
-            "moduleName":"DatabaseModule",
+            "moduleName":"AmoduleModule",
             "imports":[
-               
+               {
+                  "name":"BmoduleModule",
+                  "path":"src/bmodule/bmodule.module",
+                  "module":{
+                     "moduleName":"BmoduleModule",
+                     "imports":[ ],
+                     "controllers":[
+                        
+                     ],
+                     "exports":[
+                        
+                     ],
+                     "providers":[
+                        
+                     ]
+                  }
+               }
             ],
             "controllers":[
                
@@ -16,242 +32,65 @@ export const ABCD_full = {
                
             ],
             "providers":[
-               {
-                  "name":"DatabaseService",
-                  "path":"./database.service"
-               }
+               
             ]
          }
       },
       {
-         "name":"AuthModule",
-         "path":"./core/auth/auth.module",
+         "name":"BmoduleModule",
+         "path":"./bmodule/bmodule.module",
          "module":{
-            "moduleName":"AuthModule",
+            "moduleName":"BmoduleModule",
             "imports":[
                {
-                  "name":"UserModule",
-                  "path":"src/core/user/user.module",
+                  "name":"CmoduleModule",
+                  "path":"src/cmodule/cmodule.module",
                   "module":{
-                     "moduleName":"UserModule",
-                     "imports":[
-                        
-                     ],
+                     "moduleName":"CmoduleModule",
+                     "imports":[                     ],
                      "controllers":[
                         
                      ],
                      "exports":[
-                        {
-                           "name":"UserService",
-                           "path":"./user.service"
-                        }
+                        
                      ],
                      "providers":[
-                        {
-                           "name":"UserService",
-                           "path":"./user.service"
-                        }
-                     ]
-                  }
-               },
-               {
-                  "name":"ABCDUserModule",
-                  "path":"src/ABCD/user/ABCD-user-module",
-                  "module":{
-                     "moduleName":"ABCDUserModule",
-                     "imports":[
-                        {
-                           "name":"FileModule",
-                           "path":"src/core/file/file.module",
-                           "module":{
-                              "moduleName":"FileModule",
-                              "imports":[
-                                 
-                              ],
-                              "controllers":[
-                                 
-                              ],
-                              "exports":[
-                                 {
-                                    "name":"FileService",
-                                    "path":"./file.service"
-                                 }
-                              ],
-                              "providers":[
-                                 {
-                                    "name":"FileService",
-                                    "path":"./file.service"
-                                 }
-                              ]
-                           }
-                        }
-                     ],
-                     "controllers":[
                         
-                     ],
-                     "exports":[
-                        {
-                           "name":"ABCDUserService",
-                           "path":"./ABCD-user.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"ABCDUserService",
-                           "path":"./ABCD-user.service"
-                        }
-                     ]
-                  }
-               },
-               {
-                  "name":"EFGHUserModule",
-                  "path":"src/EFGH/user/EFGH-user.module",
-                  "module":{
-                     "moduleName":"EFGHUserModule",
-                     "imports":[
-                        {
-                           "name":"FileModule",
-                           "path":"src/core/file/file.module",
-                           "module":{
-                              "moduleName":"FileModule",
-                              "imports":[
-                                 
-                              ],
-                              "controllers":[
-                                 
-                              ],
-                              "exports":[
-                                 {
-                                    "name":"FileService",
-                                    "path":"./file.service"
-                                 }
-                              ],
-                              "providers":[
-                                 {
-                                    "name":"FileService",
-                                    "path":"./file.service"
-                                 }
-                              ]
-                           }
-                        }
-                     ],
-                     "controllers":[
-                        
-                     ],
-                     "exports":[
-                        {
-                           "name":"EFGHUserService",
-                           "path":"./EFGH-user.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"EFGHUserService",
-                           "path":"./EFGH-user.service"
-                        }
-                     ]
-                  }
-               },
-               {
-                  "name":"EmailModule",
-                  "path":"src/core/email/email.module",
-                  "module":{
-                     "moduleName":"EmailModule",
-                     "imports":[
-                        
-                     ],
-                     "controllers":[
-                        
-                     ],
-                     "exports":[
-                        {
-                           "name":"EmailService",
-                           "path":"./email.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"EmailService",
-                           "path":"./email.service"
-                        }
-                     ]
-                  }
-               },
-               {
-                  "name":"NotificationModule",
-                  "path":"src/core/notification/notification.module",
-                  "module":{
-                     "moduleName":"NotificationModule",
-                     "imports":[
-                        
-                     ],
-                     "controllers":[
-                        
-                     ],
-                     "exports":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
                      ]
                   }
                }
             ],
             "controllers":[
-               {
-                  "name":"AuthController",
-                  "path":"./auth.controller"
-               },
-               {
-                  "name":"AuthResetController",
-                  "path":"./auth-reset.controller"
-               }
+               
             ],
             "exports":[
                
             ],
             "providers":[
-               {
-                  "name":"AuthService",
-                  "path":"./auth.service"
-               }
+               
             ]
          }
       },
       {
-         "name":"ContactsModule",
-         "path":"./core/contacts/contacts.module",
+         "name":"CmoduleModule",
+         "path":"./cmodule/cmodule.module",
          "module":{
-            "moduleName":"ContactsModule",
+            "moduleName":"CmoduleModule",
             "imports":[
                {
-                  "name":"NotificationModule",
-                  "path":"src/core/notification/notification.module",
+                  "name":"AmoduleModule",
+                  "path":"src/amodule/amodule.module",
                   "module":{
-                     "moduleName":"NotificationModule",
-                     "imports":[
-                        
-                     ],
+                     "moduleName":"AmoduleModule",
+                     "imports":[],
                      "controllers":[
                         
                      ],
                      "exports":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
+                        
                      ],
                      "providers":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
+                        
                      ]
                   }
                }
@@ -260,139 +99,10 @@ export const ABCD_full = {
                
             ],
             "exports":[
-               {
-                  "name":"ContactService",
-                  "path":"./contacts.service"
-               }
-            ],
-            "providers":[
-               {
-                  "name":"ContactService",
-                  "path":"./contacts.service"
-               }
-            ]
-         }
-      },
-      {
-         "name":"RoomModule",
-         "path":"./core/call/room.module",
-         "module":{
-            "moduleName":"RoomModule",
-            "imports":[
-               {
-                  "name":"NotificationModule",
-                  "path":"src/core/notification/notification.module",
-                  "module":{
-                     "moduleName":"NotificationModule",
-                     "imports":[
-                        
-                     ],
-                     "controllers":[
-                        
-                     ],
-                     "exports":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"NotificationService",
-                           "path":"./notification.service"
-                        }
-                     ]
-                  }
-               },
-               {
-                  "name":"ContactsModule",
-                  "path":"src/core/contacts/contacts.module",
-                  "module":{
-                     "moduleName":"ContactsModule",
-                     "imports":[
-                        {
-                           "name":"NotificationModule",
-                           "path":"src/core/notification/notification.module",
-                           "module":{
-                              "moduleName":"NotificationModule",
-                              "imports":[
-                                 
-                              ],
-                              "controllers":[
-                                 
-                              ],
-                              "exports":[
-                                 {
-                                    "name":"NotificationService",
-                                    "path":"./notification.service"
-                                 }
-                              ],
-                              "providers":[
-                                 {
-                                    "name":"NotificationService",
-                                    "path":"./notification.service"
-                                 }
-                              ]
-                           }
-                        }
-                     ],
-                     "controllers":[
-                        
-                     ],
-                     "exports":[
-                        {
-                           "name":"ContactService",
-                           "path":"./contacts.service"
-                        }
-                     ],
-                     "providers":[
-                        {
-                           "name":"ContactService",
-                           "path":"./contacts.service"
-                        }
-                     ]
-                  }
-               }
-            ],
-            "controllers":[
                
             ],
-            "exports":[
-               {
-                  "name":"RoomService",
-                  "path":"./room.service"
-               }
-            ],
             "providers":[
-               {
-                  "name":"RoomService",
-                  "path":"./room.service"
-               }
-            ]
-         }
-      },
-      {
-         "name":"EmailModule",
-         "path":"./core/email/email.module",
-         "module":{
-            "moduleName":"EmailModule",
-            "imports":[
                
-            ],
-            "controllers":[
-               
-            ],
-            "exports":[
-               {
-                  "name":"EmailService",
-                  "path":"./email.service"
-               }
-            ],
-            "providers":[
-               {
-                  "name":"EmailService",
-                  "path":"./email.service"
-               }
             ]
          }
       }
@@ -409,7 +119,7 @@ export const ABCD_full = {
    "providers":[
       {
          "name":"AppService",
-         "path":"./app.service"
+         "path":"src/app.service"
       }
    ]
 }

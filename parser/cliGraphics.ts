@@ -5,6 +5,7 @@ const coolRainbow = [
     colors.FgBlue,
     colors.FgCyan,
     colors.FgGreen,
+    colors.FgYellow
 ]
 const tab = "   ";
 export function asciiPrintout(module:ModuleInfo, depth:number, verbose?:boolean){

@@ -2,20 +2,22 @@ import * as ts from 'typescript';
 import * as fs from 'fs';
 import { ModuleDependency, ModuleInfo } from './constants';
 const globalFiles= {};
-function getModuleTree(path:string,prefix:string):ModuleInfo{
+function getModuleTree(path:string,prefix:string, depth:number):ModuleInfo{
+    if(depth > 10){
+        return; 
+    }
     if(globalFiles[path]){
         return globalFiles[path];
-
     }
     const node:ts.SourceFile = ts.createSourceFile('app.module.ts',
     fs.readFileSync(path,'utf8'),
     ts.ScriptTarget.Latest);
     const imports = getModuleImports(node);
-    const currentModule:ModuleInfo = getModules(node,imports,prefix);
+    const currentModule:ModuleInfo = getModules(node,imports,prefix,depth);
     return currentModule;
 }
 
-function getModules(node:ts.SourceFile, imports:ModuleDependency[],prefix:string):ModuleInfo{
+function getModules(node:ts.SourceFile, imports:ModuleDependency[],prefix:string,depth:number):ModuleInfo{
     // Make the assumption that there will only be one ClassDeclaration
     let classDeclarations= [];
     node.forEachChild(child => {
@@ -50,7 +52,7 @@ function getModules(node:ts.SourceFile, imports:ModuleDependency[],prefix:string
                                     }else{
                                         fixedPath = prefix+foundImport?.path.slice(3)+".ts"
                                     }
-                                    const newModuleWhoDis = getModuleTree(fixedPath,prefix);
+                                    const newModuleWhoDis = getModuleTree(fixedPath,prefix,depth+1);
                                     moduleDecoratorDeclaration.imports.push(
                                         {
                                             ...foundImport,

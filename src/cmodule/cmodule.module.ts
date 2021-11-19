@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { AmoduleModule } from 'src/amodule/amodule.module';
 
-@Module({})
+@Module({imports:[AmoduleModule]})
 export class CmoduleModule {}

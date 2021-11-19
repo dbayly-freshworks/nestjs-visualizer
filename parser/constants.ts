@@ -26,8 +26,11 @@ export interface Edge {
     from:number,
     to:number
     arrows?:{
-        enabled:boolean 
-        type:string
+        to:{
+            enabled:boolean 
+            type:string
+        }
+
     }
 }
 

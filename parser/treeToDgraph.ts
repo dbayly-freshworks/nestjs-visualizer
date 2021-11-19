@@ -7,9 +7,9 @@ export function TreeToDGraph(root:ModuleInfo):Graph{
     function handleNode(branch:ModuleInfo){
         let currentModule:GraphNode=getOrCreateGraphNode(branch.moduleName);
         iterateArray(branch.imports,currentModule);
-        iterateArray(branch.controllers,currentModule);
-        iterateArray(branch.exports,currentModule);
-        iterateArray(branch.providers,currentModule);
+        // iterateArray(branch.controllers,currentModule);
+        // iterateArray(branch.exports,currentModule);
+        // iterateArray(branch.providers,currentModule);
 
 
     }
@@ -20,8 +20,10 @@ export function TreeToDGraph(root:ModuleInfo):Graph{
                 from:importedModule.id,
                 to:currentModule.id,
                 arrows:{
-                    enabled:true,
-                    type:ArrowType.Arrow
+                    to:{
+                        enabled:true,
+                        type:ArrowType.Arrow
+                    }
                 }
             })
             if(element.module){
